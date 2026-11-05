@@ -1,0 +1,105 @@
+{
+  "id": "maxim_errors",
+  "title": "Максимум ошибок",
+  "description": "Персональные шуточные слоты для Максима: 20 событий, чек дня, коллекция и сервисный чек. Не диагностика.",
+  "version": "1.1.0",
+  "vendor": "custom",
+  "loggingId": "MXER",
+  "iconGlyph": "seven",
+  "signals": {
+    "de.bmw.infotainment.vehicle.Vehicle2": {
+      "statusCarSpeed2": "rs"
+    }
+  },
+  "screens": [
+    {
+      "name": "MAIN",
+      "kind": "canvas",
+      "title": "Максимум ошибок",
+      "buttons": [
+        [
+          "BTN_SPIN",
+          "Крутить"
+        ],
+        [
+          "BTN_DAY",
+          "Чек дня"
+        ],
+        [
+          "BTN_ERASE",
+          "Стереть"
+        ],
+        [
+          "BTN_CHEAP",
+          "Подешевле"
+        ],
+        [
+          "BTN_MUSIC",
+          "Музыку"
+        ],
+        [
+          "BTN_ALBUM",
+          "Коллекция"
+        ]
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "key": "theme",
+      "label": "Colour theme",
+      "type": "choice",
+      "default": "m_tricolour",
+      "options": [
+        [
+          "m_red",
+          "M Red"
+        ],
+        [
+          "m_tricolour",
+          "M Tricolour"
+        ],
+        [
+          "ice",
+          "Ice White"
+        ],
+        [
+          "amber",
+          "Night Amber"
+        ]
+      ]
+    },
+    {
+      "key": "layout",
+      "label": "Screen layout",
+      "type": "choice",
+      "default": "full",
+      "options": [
+        [
+          "full",
+          "Full screen"
+        ],
+        [
+          "standard",
+          "Standard"
+        ]
+      ]
+    },
+    {
+      "key": "renderer",
+      "label": "Renderer",
+      "type": "choice",
+      "default": "auto",
+      "options": [
+        [
+          "auto",
+          "GPU 60 fps (default)"
+        ],
+        [
+          "software",
+          "Software"
+        ]
+      ]
+    }
+  ]
+}
